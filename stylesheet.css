@@ -152,13 +152,9 @@
             display: none;
         }
         @media (max-width:768px){
-                header{
-                height: fit-content;
-            }
     .menu{
         display:none;
     }
-    
     .mobile-menu{
         display:block;
         padding:10px;
@@ -211,7 +207,7 @@
     }
     header, h1{
         position: static;
-        height: 50px;
+        height: fit-content;
         font-size: 20px;
     }
     .prawolewo {
