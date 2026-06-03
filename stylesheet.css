@@ -29,7 +29,7 @@
             justify-content: center;
         }
         footer {
-        background-color: #111;
+        background-color: rgba(10,10,10);
         color: white;
         text-align: center;
         border-top: 2px solid yellow;
