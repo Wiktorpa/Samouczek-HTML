@@ -207,7 +207,7 @@
     }
     header, h1{
         position: static;
-        height: 100px;
+        height: fit-content;
         font-size: 20px;
     }
     .prawolewo {
