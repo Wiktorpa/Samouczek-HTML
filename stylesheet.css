@@ -1,0 +1,291 @@
+        html {
+    scroll-padding-top: 0px;
+    scroll-behavior: smooth;
+}
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: rgba(10,10,10);
+        }
+        .wszystko{
+            color: white;
+        }
+        .menu, .wprowadzenie, .html, .css{
+             display: flex;
+             flex-direction: column;
+        }
+        header{
+            border-bottom: 2px solid yellow;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            background: rgba(10,10,10, 0.7);
+            backdrop-filter: blur(3px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer {
+        background-color: #111;
+        color: white;
+        text-align: center;
+        border-top: 2px solid yellow;
+        height: 10vh;
+        color:white;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 80px;
+        }
+        .menu{
+            width: 500px;
+            background-color: rgba(10,10,10);
+            display: flex; 
+            position: sticky;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            height: 75vh;
+            top: 110px;
+        }
+        .prawolewo{
+            display: flex;
+        }
+        main{
+            width: 100%;
+            background-color: rgba(10,10,10);
+            padding: 0 20px;
+            margin-left: 34px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.08);
+            transition: 0.9s;
+            display: inline-block;
+        }
+        .menu a.active {
+            background: rgb(70, 66, 66);
+            color: white;
+            font-weight: bold;
+        }
+        ul, ol{
+          padding-left: 20px;
+          margin: 10px 0;  
+        }
+        ul li{
+            margin: 10px 0;
+        }
+        ol ul ul li a:hover{
+            background-color: rgb(129, 129, 129);
+            transform: scale(1.15);
+        }
+        ol ul ul{
+            list-style: none;
+        }
+        ol{
+            padding-left: 40px;
+        }
+        ul{
+            padding-left: 15px;
+        }
+        ol ul li a:hover{
+            background-color: rgb(132, 165, 226);
+            transform: scale(1.1);
+        }
+        main ul li{
+            margin-left: 30px;
+        }
+        h2{
+            scroll-margin-top: 110px;
+        }
+        i{
+            padding-right: 2px;
+        }
+        footer a{
+            color: white;
+            text-decoration: none;
+            padding: 4px 12px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.08);
+            transition: 0.9s;
+            display: inline-block;
+            margin: 3px;
+        }
+        footer a:hover{
+            background-color: rgb(129, 129, 129);
+        }
+        footer p{
+            margin: 5px 0;
+        }
+        footer img{
+            width: 120px;
+            height: auto;
+        }
+        pre{
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: Consolas, monospace;
+            line-height: 1.4;
+             white-space: pre-wrap;
+        }
+        h3{
+            scroll-margin-top: 100px;
+        }
+        .glowna{
+            list-style: none;
+        }
+        .boxmodel{
+            display: block;
+            margin: auto;
+            width: 500px;
+            height: auto;
+        }
+        .mobile-menu{
+            display: none;
+        }
+        @media (max-width:768px){
+    .menu{
+        display:none;
+    }
+    
+    .mobile-menu{
+        display:block;
+        padding:10px;
+    }
+
+    .mobile-menu details{
+        background:#181818;
+        margin-bottom:8px;
+        border-radius:10px;
+        overflow:hidden;
+    }
+
+    .mobile-menu summary{
+        padding:14px;
+        cursor:pointer;
+        font-weight:bold;
+        color:white;
+        list-style:none;
+    }
+
+    .mobile-menu summary::-webkit-details-marker{
+        display:none;
+    }
+
+    .mobile-menu details[open] > summary{
+        border-bottom:1px solid #333;
+    }
+
+    .mobile-menu a{
+        display:block;
+        padding:12px 20px;
+        color:white;
+        text-decoration:none;
+        background:#222;
+    }
+
+    .mobile-menu a:hover{
+        background:#333;
+    }
+
+    .mobile-menu details details{
+        margin:0;
+        border-radius:0;
+        background:#222;
+    }
+
+    .mobile-menu details details summary{
+        padding-left:25px;
+        font-size:15px;
+    }
+    header, h1{
+        position: static;
+        height: 50px;
+        font-size: 20px;
+    }
+    .prawolewo {
+        flex-direction: column;
+    }
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+    footer {
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+    br{
+        display: none;
+    }
+        }
+@media (max-width: 1024px) {
+    
+    .menu {
+        display: none;
+    }
+    .stopkamenu a{
+        margin: 3px;
+    }
+    main {
+        margin-left: 15px;
+    }
+    .mobile-menu{
+        display:block;
+        padding:10px;
+    }
+
+    .mobile-menu details{
+        background:#181818;
+        margin-bottom:8px;
+        border-radius:10px;
+        overflow:hidden;
+    }
+
+    .mobile-menu summary{
+        padding:14px;
+        cursor:pointer;
+        font-weight:bold;
+        color:white;
+        list-style:none;
+    }
+
+    .mobile-menu summary::-webkit-details-marker{
+        display:none;
+    }
+
+    .mobile-menu details[open] > summary{
+        border-bottom:1px solid #333;
+    }
+
+    .mobile-menu a{
+        display:block;
+        padding:12px 20px;
+        color:white;
+        text-decoration:none;
+        background:#222;
+    }
+
+    .mobile-menu a:hover{
+        background:#333;
+    }
+
+    .mobile-menu details details{
+        margin:0;
+        border-radius:0;
+        background:#222;
+    }
+
+    .mobile-menu details details summary{
+        padding-left:25px;
+        font-size:15px;   
+}
+}
