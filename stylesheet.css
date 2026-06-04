@@ -151,13 +151,24 @@
         .mobile-menu{
             display: none;
         }
+        .kotek{
+            width: 750px;
+            height: auto;
+        }
         @media (max-width:768px){
     .mobile-menu details details a {
     background: #5d4f75;
     color: #fff;
     padding-left: 40px;
 }
-
+.boxmodel{
+    width: 360px;
+    height: auto;
+}
+.kotek{
+    width: 360px;
+    height: auto;
+}
 .mobile-menu details details a:hover {
     background: #3f2668;
 }
