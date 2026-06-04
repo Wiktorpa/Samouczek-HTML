@@ -152,7 +152,16 @@
             display: none;
         }
         @media (max-width:768px){
-    .menu{
+    .mobile-menu details details a {
+    background: #5d4f75; /* inny kolor */
+    color: #fff;
+    padding-left: 40px; /* dodatkowe wcięcie */
+}
+
+.mobile-menu details details a:hover {
+    background: #3f2668;
+}
+            .menu{
         display:none;
     }
     .mobile-menu{
